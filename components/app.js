@@ -6,8 +6,8 @@ class App {
     console.log(grades);
   }
   constructor() {
-    this.handleGetGradesError = handleGetGradesError;
-    this.handleGetGradesSuccess = handleGetGradesSuccess;
+    this.handleGetGradesError = this.handleGetGradesError.bind(this);
+    this.handleGetGradesSuccess = this.handleGetGradesSuccess.bind(this);
   }
   getGrades() {
     $.ajax({
@@ -17,11 +17,11 @@ class App {
       headers: {
         "X-Access-Token": "bykh0Jvl"
       },
-      success: this.handleGetGradesSuccess();
-      error: this.handleGetGradesError();
+      success: this.handleGetGradesSuccess,
+      error: this.handleGetGradesError
     });
   }
   start() {
-    this.getGrades(),
+    this.getGrades();
   }
 }
