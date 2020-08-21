@@ -3,6 +3,7 @@ class App {
     this.handleGetGradesError = this.handleGetGradesError.bind(this);
     this.handleGetGradesSuccess = this.handleGetGradesSuccess.bind(this);
     this.gradeTable = gradeTable;
+    this.PageHeader = pageHeader;
   }
   handleGetGradesError(error) {
     console.error(error);
