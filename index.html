@@ -36,17 +36,29 @@
         </div>
         <div class="col-4">
           <form>
-            <div class="name">
-              <span class="fa fa-user icon"></span>
-              <input type="input-field" class="form-control" name="name" placeholder="Name">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <span class="fa fa-user icon"></span>
+                </div>
+                <input type="text" class="form-control" style="width:300px;" name="name" placeholder="Name">
+              </div>
             </div>
-            <div class="course">
-              <span class="fa fa-list-alt"></span>
-              <input type="text" class="form-control" name="course" placeholder="Course">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text">
+                  <span class="fa fa-list-alt"></span>
+                </label>
+                <input type="text" class="form-control" style="width:300px;" name="course" placeholder="Course">
+              </div>
             </div>
-            <div class="grade">
-              <span class="fa fa-graduation-cap"></span>
-              <input type="text" class="form-control" name="grade" placeholder="Grade">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <span class="fa fa-graduation-cap"></span>
+                </div>
+                <input type="text" class="form-control" style="width:300px;" name="grade" placeholder="Grade">
+              </div>
             </div>
             <div class ="text-right">
               <button class="add" type="submit">Add</button>
@@ -55,8 +67,8 @@
           </form>
         </div>
       </div>
-    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="components/grade-form.js"></script>
     <script src="components/grade-table.js"></script>
     <script src="components/page-header.js"></script>
     <script src="components/app.js"></script>
