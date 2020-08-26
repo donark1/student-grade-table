@@ -3,6 +3,7 @@
   <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Student Grade Table</title>
   </head>
@@ -14,24 +15,62 @@
               <h1>Student Grade Table</h1>
           </div>
           <div class="col-6">
-              <h2 class="text-right">Average Grade<span class="badge badge-secondary"></span></h2>
+              <h2 class="text-right">Add A Grade<span class="badge badge-secondary"></span></h2>
           </div>
       </div>
     </header>
-    <table class="table table-striped table-bordered">
-      <thead class="thead-light">
-        <tr class="table-dark">
-          <th>Student Name</th>
-          <th>Course</th>
-          <th>Grade</th>
-        </tr>
-      </thead>
-      <tbody>
-      </tbody>
-    </table>
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <table class="table table-striped table-bordered">
+            <thead class="thead-light">
+              <tr class="table-dark">
+                <th>Student Name</th>
+                <th>Course</th>
+                <th>Grade</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-4">
+          <form>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <span class="fa fa-user icon"></span>
+                </div>
+                <input type="text" class="form-control" style="width:300px;" name="name" placeholder="Name">
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text">
+                  <span class="fa fa-list-alt"></span>
+                </label>
+                <input type="text" class="form-control" style="width:300px;" name="course" placeholder="Course">
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <span class="fa fa-graduation-cap"></span>
+                </div>
+                <input type="text" class="form-control" style="width:300px;" name="grade" placeholder="Grade">
+              </div>
+            </div>
+            <div class ="text-right">
+              <button class="add" type="submit">Add</button>
+              <button class="cancel" type="reset">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
-    <script src="components/grade-table.js"></script>
+    <script src="components/grade-form.js"></script>
     <script src="components/page-header.js"></script>
+    <script src="components/grade-table.js"></script>
     <script src="components/app.js"></script>
     <script src="main.js"></script>
   </body>
