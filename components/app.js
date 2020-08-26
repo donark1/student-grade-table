@@ -22,7 +22,6 @@ class App {
     this.pageHeader.updateAverage(avg);
   }
   createGrade(name, course, grade) {
-    console.log(name, course, grade);
     $.ajax({
       url: "https://sgt.lfzprototypes.com/api/grades",
       method: "POST",
