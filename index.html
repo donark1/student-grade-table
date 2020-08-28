@@ -15,7 +15,7 @@
               <h1>Student Grade Table</h1>
           </div>
           <div class="col-6">
-              <h2 class="text-right">Delete A Grade<span class="badge badge-secondary"></span></h2>
+              <h2 class="text-right">Average Grade<span class="badge badge-secondary"></span></h2>
           </div>
       </div>
     </header>
@@ -34,16 +34,14 @@
             <tbody>
             </tbody>
           </table>
-          <div class=".d-none">
-            <p>No Grades Recorded</p>
-          </div>
+            <p class=".d-none" id="noGrades">No Grades Recorded</p>
         </div>
         <div class="col-4">
           <form>
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <div class="input-group-text">
-                  <span class="fa fa-user icon"></span>
+                  <span class="fa-lg fas fa-user icon"></span>
                 </div>
                 <input type="text" class="form-control" style="width:300px;" name="name" placeholder="Name">
               </div>
@@ -51,7 +49,7 @@
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <label class="input-group-text">
-                  <span class="fa fa-list-alt"></span>
+                  <span class="fa-lg far fa-list-alt"></span>
                 </label>
                 <input type="text" class="form-control" style="width:300px;" name="course" placeholder="Course">
               </div>
@@ -59,7 +57,7 @@
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <div class="input-group-text">
-                  <span class="fa fa-graduation-cap"></span>
+                  <span class="fa-lg fas fa-graduation-cap"></span>
                 </div>
                 <input type="text" class="form-control" style="width:300px;" name="grade" placeholder="Grade">
               </div>
