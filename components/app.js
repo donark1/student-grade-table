@@ -32,12 +32,12 @@ class App {
       headers: {
         "X-Access-Token": "bykh0Jvl"
       },
-      success: this.handleCreateGradesSuccess,
-      error: this.handleCreateGradesError
+      success: this.handleCreateGradeSuccess,
+      error: this.handleCreateGradeError
     });
   }
   handleCreateGradeError(error) {
-    console.log(error);
+    console.error();
   }
   handleCreateGradeSuccess() {
     this.getGrades();
@@ -54,7 +54,15 @@ class App {
     });
   }
   deleteGrade(id) {
-    console.log(id);
+    $.ajax({
+      url: "https://sgt.lfzprototypes.com/api/grades/"+id,
+      method: "DELETE",
+      headers: {
+        "X-Access-Token": "bykh0Jvl"
+      },
+      success: this.handleDeleteGradeSuccess,
+      error: this.handleDeleteGradeError
+    });
   }
   handleDeleteGradeError(error) {
     console.error();

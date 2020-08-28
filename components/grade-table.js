@@ -4,15 +4,14 @@ class GradeTable {
     this.noGradesElement = noGradesElement;
   }
   updateGrades(grades) {
-    console.log(grades);
     var tbody = this.tableElement.querySelector("tbody");
     tbody.textContent = "";
     for (var i = 0; i < grades.length; i++) {
       var renderGrade = this.renderGradeRow(grades[i], this.deleteGrade);
       tbody.append(renderGrade);
     }
-    if (grades === null) {
-      var pElement = document.getElementByID("noGrades");
+    if (Object.keys(grades).length === 0) {
+      var pElement = document.getElementById("noGrades");
       pElement.classList.remove("d-none");
     }
   }
