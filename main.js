@@ -4,6 +4,6 @@ var header = document.querySelector("header");
 var pageHeader = new PageHeader(header);
 var form = document.querySelector("form");
 var gradeForm = new GradeForm(form);
-var noGradesRecorded = document.querySelector("p");
+var noGradesRecorded = document.getElementById("noGrades");
 var app = new App(gradeTable, pageHeader, gradeForm);
 app.start();
