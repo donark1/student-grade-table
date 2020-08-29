@@ -1,5 +1,6 @@
 var table = document.querySelector("table");
-var gradeTable = new GradeTable(table);
+var noGradesRecorded = document.getElementById("noGrades");
+var gradeTable = new GradeTable(table, noGradesRecorded);
 var header = document.querySelector("header");
 var pageHeader = new PageHeader(header);
 var form = document.querySelector("form");
