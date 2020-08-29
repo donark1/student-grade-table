@@ -10,15 +10,15 @@ class GradeTable {
       var renderGrade = this.renderGradeRow(grades[i], this.deleteGrade);
       tbody.append(renderGrade);
     }
-    var pElement = document.getElementById("noGrades");
     if (grades.length > 0) {
+      var pElement = document.getElementById("noGrades");
       pElement.classList = "d-none";
     } else {
       pElement.classList.remove("d-none");
     }
   }
   onDeleteClick(deleteGrade) {
-  this.deleteGrade = deleteGrade;
+    this.deleteGrade = deleteGrade;
   }
   renderGradeRow(data, deleteGrade) {
     var tr = document.createElement("tr");
@@ -39,8 +39,8 @@ class GradeTable {
     tr.append(td3);
     tr.append(td4);
     button.addEventListener("click", function () {
-    deleteGrade(data.id);
-  });
+      deleteGrade(data.id);
+    });
     return tr;
   }
 }

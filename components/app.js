@@ -37,7 +37,7 @@ class App {
     });
   }
   handleCreateGradeError(error) {
-    console.error();
+    console.error(error);
   }
   handleCreateGradeSuccess() {
     this.getGrades();
@@ -65,7 +65,7 @@ class App {
     });
   }
   handleDeleteGradeError(error) {
-    console.error();
+    console.error(error);
   }
   handleDeleteGradeSuccess() {
     this.getGrades();
