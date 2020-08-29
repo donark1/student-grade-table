@@ -10,7 +10,7 @@ class GradeTable {
       var renderGrade = this.renderGradeRow(grades[i], this.deleteGrade);
       tbody.append(renderGrade);
     }
-    if (Object.keys(grades).length === 0) {
+    if (grades.length === 0) {
       var pElement = document.getElementById("noGrades");
       pElement.classList.remove("d-none");
     }
